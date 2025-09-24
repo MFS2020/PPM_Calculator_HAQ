@@ -75,12 +75,15 @@ if __name__ == "__main__":
     ppm_input = input("PPM: ").strip()
     ppb_input = input("PPB: ").strip()
 
-    ppm_value = float(ppm_input) if ppm_input else None
-    ppb_value = float(ppb_input) if ppb_input else None
-
     try:
-        drift = ppm_ppb_to_drift(ppm=ppm_value, ppb=ppb_value)
-    except ValueError as exc:
-        print(f"Error: {exc}")
+        ppm_value = float(ppm_input) if ppm_input else None
+        ppb_value = float(ppb_input) if ppb_input else None
+    except ValueError:
+        print("Error: Please enter numeric values for PPM/PPB.")
     else:
-        print(f"Estimated drift over a day: {drift:+.6f} seconds")
+        try:
+            drift = ppm_ppb_to_drift(ppm=ppm_value, ppb=ppb_value)
+        except ValueError as exc:
+            print(f"Error: {exc}")
+        else:
+            print(f"Estimated drift over a day: {drift:+.6f} seconds")

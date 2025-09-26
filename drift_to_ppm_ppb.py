@@ -68,19 +68,22 @@ def ppm_ppb_to_drift(
 if __name__ == "__main__":
     # Example usage: 0.25 seconds drift over a day (86400 seconds)
     ppm, ppb = drift_to_ppm_ppb(0.25, 86400)
-    print(f"Drift: +0.25 s/day => {ppm:.3f} PPM, {ppb:.3f} PPB")
+    print(f"Drift: +0.25 s/day => {ppm:.4f} PPM, {ppb:.4f} PPB")
 
     print()
     print("Enter a PPM or PPB value to estimate the daily drift (press Enter to skip a value).")
     ppm_input = input("PPM: ").strip()
     ppb_input = input("PPB: ").strip()
 
-    ppm_value = float(ppm_input) if ppm_input else None
-    ppb_value = float(ppb_input) if ppb_input else None
-
     try:
-        drift = ppm_ppb_to_drift(ppm=ppm_value, ppb=ppb_value)
-    except ValueError as exc:
-        print(f"Error: {exc}")
+        ppm_value = float(ppm_input) if ppm_input else None
+        ppb_value = float(ppb_input) if ppb_input else None
+    except ValueError:
+        print("Error: Please enter numeric values for PPM/PPB.")
     else:
-        print(f"Estimated drift over a day: {drift:+.6f} seconds")
+        try:
+            drift = ppm_ppb_to_drift(ppm=ppm_value, ppb=ppb_value)
+        except ValueError as exc:
+            print(f"Error: {exc}")
+        else:
+            print(f"Estimated drift over a day: {drift:+.4f} seconds")

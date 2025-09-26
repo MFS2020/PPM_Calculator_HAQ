@@ -86,4 +86,5 @@ if __name__ == "__main__":
         except ValueError as exc:
             print(f"Error: {exc}")
         else:
+            # Format drift output to four decimal places for consistency with PPM/PPB.
             print(f"Estimated drift over a day: {drift:+.4f} seconds")

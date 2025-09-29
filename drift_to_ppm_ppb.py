@@ -83,20 +83,23 @@ if __name__ == "__main__":
     print("Enter a PPM or PPB value to estimate the daily drift (press Enter to skip a value).")
     ppm_input = input("PPM: ").strip()
     ppb_input = input("PPB: ").strip()
-
+    codex/wrap-conversions-in-try-block
     if ppm_input.lower() == "time" or ppb_input.lower() == "time":
         print_current_time()
     else:
+      try:
+        ppm_value = float(ppm_input) if ppm_input else None
+        ppb_value = float(ppb_input) if ppb_input else None
+    except ValueError:
+        print("Error: Please enter numeric values for PPM/PPB.")
+    else:
         try:
-            ppm_value = float(ppm_input) if ppm_input else None
-            ppb_value = float(ppb_input) if ppb_input else None
-        except ValueError:
-            print("Error: Please enter numeric values for PPM/PPB.")
+            drift = ppm_ppb_to_drift(ppm=ppm_value, ppb=ppb_value)
+        except ValueError as exc:
+            print(f"Error: {exc}")
         else:
-            try:
-                drift = ppm_ppb_to_drift(ppm=ppm_value, ppb=ppb_value)
-            except ValueError as exc:
-                print(f"Error: {exc}")
-            else:
-                # Format drift output to four decimal places for consistency with PPM/PPB.
-                print(f"Estimated drift over a day: {drift:+.4f} seconds")
+          codex/wrap-conversions-in-try-block
+            # Format drift output to four decimal places for consistency with PPM/PPB.
+            print(f"Estimated drift over a day: {drift:+.6f} seconds")
+            main
+            main

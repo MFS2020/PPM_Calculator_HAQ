@@ -74,6 +74,13 @@ def print_current_time() -> None:
     print(now.strftime("Current date and time: %Y-%m-%d %H:%M:%S"))
 
 
+def print_current_date() -> None:
+    """Print the current calendar date."""
+
+    today = datetime.now()
+    print(today.strftime("Current date: %Y-%m-%d"))
+
+
 if __name__ == "__main__":
     # Example usage: 0.25 seconds drift over a day (86400 seconds)
     ppm, ppb = drift_to_ppm_ppb(0.25, 86400)
@@ -83,11 +90,23 @@ if __name__ == "__main__":
     print("Enter a PPM or PPB value to estimate the daily drift (press Enter to skip a value).")
     ppm_input = input("PPM: ").strip()
     ppb_input = input("PPB: ").strip()
-    codex/wrap-conversions-in-try-block
-    if ppm_input.lower() == "time" or ppb_input.lower() == "time":
-        print_current_time()
-    else:
-      try:
+
+    special_commands = {
+        "time": print_current_time,
+        "date": print_current_date,
+    }
+
+    handled_command = False
+    for user_input in (ppm_input, ppb_input):
+        command = user_input.lower()
+        if command in special_commands:
+            special_commands[command]()
+            handled_command = True
+
+    if handled_command:
+        raise SystemExit(0)
+
+    try:
         ppm_value = float(ppm_input) if ppm_input else None
         ppb_value = float(ppb_input) if ppb_input else None
     except ValueError:
@@ -98,8 +117,5 @@ if __name__ == "__main__":
         except ValueError as exc:
             print(f"Error: {exc}")
         else:
-          codex/wrap-conversions-in-try-block
             # Format drift output to four decimal places for consistency with PPM/PPB.
             print(f"Estimated drift over a day: {drift:+.6f} seconds")
-            main
-            main

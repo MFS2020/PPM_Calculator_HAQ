@@ -2,3 +2,4 @@ This is a simple calculator, put change log after every PR created and add chang
 
 ## Changelog
 - 2025-02-14: Added command handling for "date" and "time" inputs along with improved CLI robustness.
+- 2025-02-17: Added "unix" command to display the current Unix time and introduced helper for deterministic testing.

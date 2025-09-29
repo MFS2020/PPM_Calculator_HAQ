@@ -3,6 +3,16 @@
 from datetime import datetime
 
 
+def _now() -> datetime:
+    """Return the current local datetime.
+
+    A dedicated helper makes it straightforward to patch the current time in
+    tests without needing to monkeypatch :func:`datetime.datetime.now`.
+    """
+
+    return datetime.now()
+
+
 def drift_to_ppm_ppb(drift_seconds: float, period_seconds: float = 86400.0):
     """
     Convert time drift in seconds to parts per million (PPM) and parts per billion (PPB).
@@ -70,15 +80,22 @@ def ppm_ppb_to_drift(
 def print_current_time() -> None:
     """Print the current date and time down to the second."""
 
-    now = datetime.now()
+    now = _now()
     print(now.strftime("Current date and time: %Y-%m-%d %H:%M:%S"))
 
 
 def print_current_date() -> None:
     """Print the current calendar date."""
 
-    today = datetime.now()
+    today = _now()
     print(today.strftime("Current date: %Y-%m-%d"))
+
+
+def print_current_unix_time() -> None:
+    """Print the current Unix time to the nearest second."""
+
+    unix_time = int(_now().timestamp())
+    print(f"Current Unix time: {unix_time}")
 
 
 if __name__ == "__main__":
@@ -94,6 +111,7 @@ if __name__ == "__main__":
     special_commands = {
         "time": print_current_time,
         "date": print_current_date,
+        "unix": print_current_unix_time,
     }
 
     handled_command = False

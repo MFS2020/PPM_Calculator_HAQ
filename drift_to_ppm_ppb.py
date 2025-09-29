@@ -1,5 +1,7 @@
 """Utility helpers for converting between clock drift and PPM/PPB errors."""
 
+from datetime import datetime
+
 
 def drift_to_ppm_ppb(drift_seconds: float, period_seconds: float = 86400.0):
     """
@@ -65,22 +67,47 @@ def ppm_ppb_to_drift(
     return drift_seconds
 
 
+def print_current_time() -> None:
+    """Print the current date and time down to the second."""
+
+    now = datetime.now()
+    print(now.strftime("Current date and time: %Y-%m-%d %H:%M:%S"))
+
+
+def print_current_date() -> None:
+    """Print the current date."""
+
+    today = datetime.now()
+    print(today.strftime("Current date: %Y-%m-%d"))
+
+
 if __name__ == "__main__":
     # Example usage: 0.25 seconds drift over a day (86400 seconds)
     ppm, ppb = drift_to_ppm_ppb(0.25, 86400)
-    print(f"Drift: +0.25 s/day => {ppm:.3f} PPM, {ppb:.3f} PPB")
+    print(f"Drift: +0.25 s/day => {ppm:.4f} PPM, {ppb:.4f} PPB")
 
     print()
     print("Enter a PPM or PPB value to estimate the daily drift (press Enter to skip a value).")
     ppm_input = input("PPM: ").strip()
     ppb_input = input("PPB: ").strip()
 
-    ppm_value = float(ppm_input) if ppm_input else None
-    ppb_value = float(ppb_input) if ppb_input else None
+    commands = {ppm_input.lower(), ppb_input.lower()}
 
-    try:
-        drift = ppm_ppb_to_drift(ppm=ppm_value, ppb=ppb_value)
-    except ValueError as exc:
-        print(f"Error: {exc}")
+    if "time" in commands:
+        print_current_time()
+    elif "date" in commands:
+        print_current_date()
     else:
-        print(f"Estimated drift over a day: {drift:+.6f} seconds")
+        try:
+            ppm_value = float(ppm_input) if ppm_input else None
+            ppb_value = float(ppb_input) if ppb_input else None
+        except ValueError:
+            print("Error: Please enter numeric values for PPM/PPB.")
+        else:
+            try:
+                drift = ppm_ppb_to_drift(ppm=ppm_value, ppb=ppb_value)
+            except ValueError as exc:
+                print(f"Error: {exc}")
+            else:
+                # Format drift output to four decimal places for consistency with PPM/PPB.
+                print(f"Estimated drift over a day: {drift:+.4f} seconds")

@@ -1,5 +1,7 @@
 """Utility helpers for converting between clock drift and PPM/PPB errors."""
 
+from datetime import datetime
+
 
 def drift_to_ppm_ppb(drift_seconds: float, period_seconds: float = 86400.0):
     """
@@ -65,6 +67,13 @@ def ppm_ppb_to_drift(
     return drift_seconds
 
 
+def print_current_time() -> None:
+    """Print the current date and time down to the second."""
+
+    now = datetime.now()
+    print(now.strftime("Current date and time: %Y-%m-%d %H:%M:%S"))
+
+
 if __name__ == "__main__":
     # Example usage: 0.25 seconds drift over a day (86400 seconds)
     ppm, ppb = drift_to_ppm_ppb(0.25, 86400)
@@ -74,8 +83,11 @@ if __name__ == "__main__":
     print("Enter a PPM or PPB value to estimate the daily drift (press Enter to skip a value).")
     ppm_input = input("PPM: ").strip()
     ppb_input = input("PPB: ").strip()
-
-    try:
+    codex/wrap-conversions-in-try-block
+    if ppm_input.lower() == "time" or ppb_input.lower() == "time":
+        print_current_time()
+    else:
+      try:
         ppm_value = float(ppm_input) if ppm_input else None
         ppb_value = float(ppb_input) if ppb_input else None
     except ValueError:
@@ -89,4 +101,5 @@ if __name__ == "__main__":
           codex/wrap-conversions-in-try-block
             # Format drift output to four decimal places for consistency with PPM/PPB.
             print(f"Estimated drift over a day: {drift:+.6f} seconds")
+            main
             main

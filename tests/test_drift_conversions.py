@@ -8,6 +8,7 @@ from drift_to_ppm_ppb import (
     drift_to_ppm_ppb,
     ppm_ppb_to_drift,
     print_current_unix_time,
+    print_hello,
 )
 
 
@@ -48,6 +49,13 @@ class CommandOutputTests(unittest.TestCase):
                 print_current_unix_time()
 
         self.assertEqual(buffer.getvalue().strip(), "Current Unix time: 1717245296")
+
+    def test_print_hello(self):
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            print_hello()
+
+        self.assertEqual(buffer.getvalue().strip(), "hello")
 
 
 if __name__ == "__main__":

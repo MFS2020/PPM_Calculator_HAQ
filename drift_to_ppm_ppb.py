@@ -98,6 +98,12 @@ def print_current_unix_time() -> None:
     print(f"Current Unix time: {unix_time}")
 
 
+def print_hello() -> None:
+    """Echo "hello" back to the caller."""
+
+    print("hello")
+
+
 if __name__ == "__main__":
     # Example usage: 0.25 seconds drift over a day (86400 seconds)
     ppm, ppb = drift_to_ppm_ppb(0.25, 86400)
@@ -112,6 +118,7 @@ if __name__ == "__main__":
         "time": print_current_time,
         "date": print_current_date,
         "unix": print_current_unix_time,
+        "hello": print_hello,
     }
 
     handled_command = False

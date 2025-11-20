@@ -1,0 +1,152 @@
+1
+
+@Qullamaggie : Shorting Extreme momentum stock with questionable story (hype and pump
+stocks)
+
+Note: @Qullamaggie shared this strategy this month. It is a short strategy for pump and dump
+stocks. Below are main points from his posts. In order to trade this focus on stocks up 300% in a
+month or more with unsustainable story.
+
+@thermos I would not consider myself an expert but here is a huge edge in the hype/pump
+stocks that run up 300-500-1000%+ and then you short on day 3-4. DGLY PLUG APT LAKE MDBX
+VSR GENE etc etc. One can scale in into strength on day 3-4 or wait for lower highs to confirm.
+Usually there are 2-5 big ones/year and I have been trading this strategy for 3years. Key to
+these are DON'T be too early, never short on day 1 or 2 no matter how big the stock has run.
+Most times on day 3-4 the win rate is about 80-90%. Every time the stock goes sideways 2 days
+or more the counter resets. See DGLY, ISNS, MDBX why. It's a very high octane strategy and not
+for everyone. I have seen lots of people blow up this way because they were too early and then
+got stubborn. Also 90% of these stocks are going to be hard to borrow so you better have a
+good broker not that ameritrade etrade crap.
+
+Usually hard to get a 5:1 risk/reward with this strategy but 1:1-1:3 is fine since you are going for
+accuracy.
+
+Also to add, sometimes when the stock is on a secondary run shorting on day 2 can be okay,
+example ISNS BLDP. Okay I just gave away my most profitable strategy.
+
+If anyone is interested I can explain some more rules etc. Hopefully it was of value to some
+people.
+
+2
+
+Okay so a bit of background. When I realized there was an edge in this kind of trades I needed
+to confirm that so I went through every chart in the U.S. on the monthly timeframe in TC2000
+and looked for these kinds of movers 10-15 years back. Then I used eSignal to get the daily and
+intraday charts and Briefing.com to get the news of what was the catalyst/reason for that kind
+of a move. (I have also done this research on every EP that had follow through the past 10-15
+years and I encourage everyone do do this to gain conviction/confidence in these kinds of
+strategies).
+
+Anyways even though there are LOTS of stock every year that have big 1and 2 day runs (up
+several 100%) that are up on pure hype or outright pumps and then fade 50-70%+ my findings
+were that it only took one stock that kept going and going and going to take you out of the
+game for good. I looked at how many % the different stocks went up on day 1, 2, 3, 4 etc, what
+kind of patterns were on the 30 minute chart etc. Some stocks put in incredible tight ranges on
+their topping day and then have huge mid/late day fades and on these you can actually get 1:5
+and 1:10 kind of risk/reward (example PLUG 11 March 2014). So day 3-4 it is and there are not
+going to be that many/year. The absolute most important thing with this kind of strategy is to
+STAY SAFE! Also on day 3-4 I many times short partials into strength and scale in until lower
+highs have been set and it is very important to get outta the f*ing way if the stock holds up and
+takes out highs after 1.-1.5 hours after market open. See DGLY intraday on that big$20-33 day
+for an example why it is important.
+
+I have a database in Evernote with around 2000 stocks and over 10,000 charts annotated with
+news and notes with earnings #'s etc on this shorting strategy and EP and basically every stock
+that has had a big run the past 15 years. I think everyone should do this for the EP strategy at
+least.
+
+3
+
+Anyways I'm not an expert in any way but the past 3 years I have run up a$10K account to mid
+6-figures for what it is worth. So not anywhere closeto the supertrader "96-million dollar man".
+I just want to reveal how much work I have put into this to be profitable and I think my results
+are pretty damn good so far.
+
+Also I want to once again remind that the shorting strategy is mainly for hype/pump stocks not
+for the co. that cures cancer and that makes the biggest move ever and you blow up :)
+
+Thank you I hope it was helpful to someone. Also I want to point out that my results are mainly
+from my shorting strategy so far and I just recently started studying EP seriously.
+
+@7 I just gave away my whole main moneymaking strategy. Don't know what I missed besides
+mentioning cover partials every ~10% down since you never know if the stock is going to turn
+around and have a secondary run and stop you out wishing you had covered more. But don't
+take my word for anything I said, do the kind of study yourself as I did and create a specific
+setup where you have an edge an conviction (confidence.
+4
+
+
+
+
+VLTC I am short, stock is up 1000% in 2 weeks because Icahn averaged down on a losing
+position (symbol then MOTR) he had since 2008. Here is a video saying his son talked him into
+this investment and he doesn't appear very excited about it: https://vid.me/PpnM Also there
+was a Seeking Alpha speculating VLTC as a buyout target and some ridiculous claims that the
+author admitted overstating in the comments himself. The stock has rotated its float several
+times/day for 2 weeks, every long in this(except Icahn) have probably a $8+ average and once
+they see red in their account things will get interesting :) I think a 30-50%+ fade possible from
+here within 2 weeks. With all this being said my stop is $9.50 and my average is $9.05 and I
+have 20% of my account short. And yes I am aware this thing COULD gap up 100% on Monday
+in a black swan scenario and it would put me in a drawdown not a blow up.
+
+@7 Maybe I'll post some chart example that I've traded over the weekend, I am too tired now
+it's 10:15 PM in Sweden. @thor I use Centerpoint, and get the borrows via Quantex. I also use
+IB.
+
+5
+
+What you can do if you see a stock up 2-3 days in a row and think it can be potentially the short
+of the year but afraid there won't be shares the next day to short, you can box the shares if you
+have 2 different brokers.
+
+VLTC if you scroll on the daily chart and look at it day for day in your charting platforms it will
+look very extended already at $6 and I know for a fact lots of people short these things just
+because "they are up a lot on nothing" and they don't really believe it can go up another 50-
+100%+ very fast. This is why a specific setup with rules is so important. I did short it on April 10
+(2nd day is okay to short on a secondary run, as I mentioned in my rules earlier) and stopped
+out for a small loss (2% of my account) 2days later when the highs were taken out. I reshorted
+April 15 (2nd upday on a tertiary run) and have scaled in on pops yesterday and today (I was
+also very close getting stopped out today) but the stock closed weak and put in a wick. Also
+every times you get stopped out and the stock goes50-100% higher and you get another setup
+you can do more size since the risk/reward and odds of success have improved
+
+Also I need to mention this, I have seen a lot of short traders come and go. Sometimes you
+don't get these big multi day/multi week movers for many months and when they come it
+catches people off guard, they have been conditioned to short the stocks that fade on the 1st or
+2nd day. This is where my edge comes in, where all shorts are exhausted and covering after an
+incredible run that caught so many off guard. For example GENE back in early February JPM
+bought a passive stake in GENE after the stock ran 200% "JPM entered into agreements with
+clients for control of the stock and is holding this stock in Prime Broking accounts to lend for
+traders who want to short the stock." Then the stock broke the $4.70 flag and went up another
+150%+ in a few days. So there was a lot of smart short underwater when I shorted and it's these
+kinds of scenarios I look for. There are not many in a year but it's a huge edge. I can add GENE
+was a pure pump with lots of shady stuff going on, that's why smart JPM
+
+6
+
+clients wanted to short. And they had to hold through that and wait for a month to get back
+break even. GENE was my 2nd biggest trade I can add
+
+@tpz yes I had high expectations for CHOP it's a Chinese steel company, pure crappola as the
+multi year chart will tell you, basically they bought a porcelain collection last year for all their
+money for $234M they claim to be worth $1B -you can't make this up LOL-. Anyways I was
+hoping it would have follow through today to get good entries but instead it gapped down and I
+left it alone.
+
+@thermosThere is no "upper limit", it's all about the catalyst and the setup. @ju474 I use IB too
+but mostly for longs as their short list is not that good. Define "high cost". Centerpoint is one of
+the very few places where a retail guy like me can short the hard to borrow uber-turds and I
+have made good money on ISNS DGLY PLUG APT LAKE VSR GENE etc etc shorts thanks to that.
+Also Centerpoint has the absolutely best customer service for a broker I have ever encountered
+and I've used close to 10 different ones since I started. So if anything they are CHEAP compared
+to what I get.
+Just get TC2000, briefing.com and eSignal (or any other kind of service that gives you the same
+thing) and do the kind of research I did and before you know it you might find yourself standing
+on 2 legs armed with a new setup (might be shorting turds, might be EP or whatever). Yes there
+are services out there "teaching" similar thing but no need to pay 1000'sof dollars. (Except for
+this site of course but don't tell Pradeep it's cheap here :) )
+
+My edge comes in when a stock gets to a point no one ever thought possible and then more,
+for example on day 3-4 of the first up leg of a300-500-1000%+ run or day 2-3 on a secondary or
+tertiary run. Today is day 2 of a (whatever the word is for what comes after tertiary LOL) run
+
